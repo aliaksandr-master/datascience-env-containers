@@ -5,5 +5,11 @@
 ## Start
 
 ```bash
-$ docker-compose up --build
+$ ./start-cpu.sh
+```
+
+OR
+
+```bash
+$ ./start-gpu.sh
 ```

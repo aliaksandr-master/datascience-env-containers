@@ -1,6 +1,10 @@
 FROM tensorflow/tensorflow:latest-gpu-py3
 
-RUN apt-get update && apt-get install -y build-essential graphviz gcc cmake git wget unzip yasm pkg-config libswscale-dev libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libavformat-dev libpq-dev
+RUN apt-get update \
+    && apt-get install -y \
+        build-essential graphviz gcc cmake git wget unzip \
+        yasm pkg-config libswscale-dev libtbb2 libtbb-dev \
+        libjpeg-dev libpng-dev libtiff-dev libjasper-dev libavformat-dev libpq-dev httpie
 
 RUN pip install --upgrade pip
 
