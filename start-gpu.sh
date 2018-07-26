@@ -1,6 +1,10 @@
 #!/bin/bash
 
-cd ./datascience-env-containers;
+THIS_SHELL_FILE_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+
+cd THIS_SHELL_FILE_DIR
+
+./stop-gpu.sh
 
 URL='http://localhost:8888';
 
