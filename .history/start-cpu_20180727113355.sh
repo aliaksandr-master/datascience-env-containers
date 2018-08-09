@@ -2,7 +2,7 @@
 
 cd "$( dirname "${BASH_SOURCE[0]}" )"
 
-./stop-gpu.sh
+./stop-cpu.sh
 
 URL='http://localhost:8888';
 
@@ -17,4 +17,5 @@ then
 fi
 
 `$cmd` &>/dev/null &disown;
-docker-compose -f docker-compose-gpu.yml up --build --user=`whoami`
+
+docker-compose -f docker-compose-cpu.yml up --build

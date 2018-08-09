@@ -1,0 +1,14 @@
+version: '2.3'
+
+services:
+  gpu:
+    ports:
+      - 8888:8888
+    env_file: ./.env
+    runtime: nvidia
+    build:
+      context: ./gpu
+    user: ${CURRENT_UID}
+    volumes:
+      - ../notebooks:/notebooks
+    command: bash -c "export PYTHONPATH=/notebooks/ && jupyter notebook --notebook-dir /notebooks/ --ip=* --port=8888 --allow-root --NotebookApp.token='' --log-level=DEBUG --no-browser --debug"

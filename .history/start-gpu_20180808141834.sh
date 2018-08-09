@@ -17,4 +17,4 @@ then
 fi
 
 `$cmd` &>/dev/null &disown;
-docker-compose -f docker-compose-gpu.yml up --build --user=`whoami`
+docker-compose -f docker-compose-gpu.yml up --build --user=

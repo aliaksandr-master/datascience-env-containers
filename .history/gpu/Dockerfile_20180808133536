@@ -1,5 +1,9 @@
 FROM tensorflow/tensorflow:latest-gpu-py3
 
+ENV HOME /home/some
+RUN mkdir -p /home/some
+RUN chmod 775 /home/some
+
 RUN apt-get update && apt-get install -y \
     build-essential graphviz gcc cmake git wget unzip \
     yasm pkg-config libswscale-dev libtbb2 libtbb-dev \

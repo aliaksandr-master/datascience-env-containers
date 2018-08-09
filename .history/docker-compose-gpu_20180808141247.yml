@@ -1,12 +1,14 @@
 version: '2.3'
 
 services:
-  cpu:
+  gpu:
     ports:
       - 8888:8888
     env_file: ./.env
+    environment:
+    runtime: nvidia
     build:
-      context: ./cpu
+      context: ./gpu
     user: ${CURRENT_UID}
     volumes:
       - ../notebooks:/notebooks

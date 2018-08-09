@@ -1,10 +1,10 @@
 FROM tensorflow/tensorflow:latest-gpu-py3
 
-RUN apt-get update && apt-get install -y \
-    build-essential graphviz gcc cmake git wget unzip \
-    yasm pkg-config libswscale-dev libtbb2 libtbb-dev \
-    libjpeg-dev libpng-dev libtiff-dev libjasper-dev \
-    libavformat-dev libpq-dev httpie
+RUN apt-get update \
+    && apt-get install -y \
+        build-essential graphviz gcc cmake git wget unzip \
+        yasm pkg-config libswscale-dev libtbb2 libtbb-dev \
+        libjpeg-dev libpng-dev libtiff-dev libjasper-dev libavformat-dev libpq-dev httpie
 
 RUN pip install --upgrade pip
 
@@ -19,4 +19,3 @@ RUN pip install statsmodels==0.9.0
 RUN pip install stocktrends==0.1.1
 RUN pip install pandas==0.22.0 pandas-datareader==0.6.0
 RUN pip install nltk===3.3.0
-RUN pip install mypy==0.620
