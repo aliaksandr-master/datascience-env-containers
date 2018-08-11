@@ -23,7 +23,7 @@ RUN python3.6 -m pip install --upgrade pip
 RUN python3.6 -m pip install numpy==1.15.0 numba==0.38.1 scipy==1.1.0 pandas==0.23.4 scikit-image==0.14.0 scikit-learn==0.19.1 sklearn==0.0
 RUN python3.6 -m pip install bokeh==0.13.0 matplotlib==2.2.2 plotly==3.1.1 seaborn==0.9.0
 RUN python3.6 -m pip install catboost==0.9.1.1 fbprophet
-RUN python3.6 -m pip install keras==2.2.2 theano==1.0.2 pytorch==0.1.2
+RUN python3.6 -m pip install keras==2.2.2 theano==1.0.2
 RUN python3.6 -m pip install requests==2.19.1
 RUN python3.6 -m pip install statsmodels==0.9.0
 RUN python3.6 -m pip install stocktrends==0.1.1 nsepy==0.7 pandas-datareader==0.6.0
