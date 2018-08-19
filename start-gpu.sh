@@ -18,4 +18,4 @@ fi
 
 `$cmd` &>/dev/null &disown;
 
-docker-compose -f docker-compose-gpu.yml up --build
+docker-compose -f docker-compose-gpu.yml up --build --force-recreate
