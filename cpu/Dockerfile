@@ -28,6 +28,6 @@ RUN python3.6 -m pip install requests==2.19.1
 RUN python3.6 -m pip install statsmodels==0.9.0
 RUN python3.6 -m pip install stocktrends==0.1.1 nsepy==0.7 pandas-datareader==0.6.0
 RUN python3.6 -m pip install nltk===3.3.0
-RUN python3.6 -m pip install mypy
+RUN python3.6 -m pip install mypy pytest snapshottest
 RUN python3.6 -m pip install ipykernel
 RUN python3.6 -m ipykernel install --user
