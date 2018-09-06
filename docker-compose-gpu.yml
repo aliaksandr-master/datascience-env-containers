@@ -10,4 +10,4 @@ services:
       context: ./gpu
     volumes:
       - ../notebooks:/notebooks
-    command: bash -c "export PYTHONPATH=/notebooks/ && jupyter notebook --notebook-dir /notebooks/ --ip=* --port=8888 --allow-root --NotebookApp.token='' --log-level=DEBUG --no-browser --debug --allow-hidden"
+    command: bash -c "export PYTHONPATH=/notebooks/ && jupyter notebook --notebook-dir /notebooks/ --ip=* --port=8888 --allow-root --NotebookApp.token='' --log-level=DEBUG --no-browser --debug"
