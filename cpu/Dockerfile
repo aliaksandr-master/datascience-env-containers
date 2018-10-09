@@ -29,3 +29,4 @@ RUN python3.6 -m pip install mypy==0.620 pytest==3.7.2 pytypes==1.0b5 flake8==3.
 RUN python3.6 -m pip install ipykernel==4.8.2 fast_progress==0.0.3 ipywidgets==7.4.0
 RUN python3.6 -m ipykernel install --user
 RUN python3.6 -m pip install deco
+RUN python3.6 -m pip install memory_profiler
