@@ -26,7 +26,7 @@ RUN python3.6 -m pip install catboost==0.9.1.1 fbprophet keras==2.2.2 theano==1.
 RUN python3.6 -m pip install requests==2.19.1
 RUN python3.6 -m pip install stocktrends==0.1.1 nsepy==0.7 pandas-datareader==0.6.0
 RUN python3.6 -m pip install mypy==0.620 pytest==3.7.2 pytypes==1.0b5 flake8==3.5.0 snapshottest==0.5.0 pytype==2018.8.10 flake8-self==0.2.2 flake8-regex==0.3 flake8-docstrings==1.3.0 flake8-mypy==17.8.0 flake8-super-call==1.0.0
-RUN python3.6 -m pip install ipykernel==4.8.2 fast_progress==0.0.3 ipywidgets==7.4.0
+RUN python3.6 -m pip install ipykernel==4.8.2 fastprogress==0.1.10 ipywidgets==7.4.0
 RUN python3.6 -m ipykernel install --user
 RUN python3.6 -m pip install deco
 RUN python3.6 -m pip install memory_profiler
