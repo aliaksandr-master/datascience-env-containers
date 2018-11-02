@@ -30,3 +30,4 @@ RUN python3.6 -m pip install ipykernel==4.8.2 fastprogress==0.1.10 ipywidgets==7
 RUN python3.6 -m ipykernel install --user
 RUN python3.6 -m pip install deco
 RUN python3.6 -m pip install memory_profiler
+RUN python3.6 -m pip install cached-property==1.5.1
