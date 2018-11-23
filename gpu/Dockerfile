@@ -31,3 +31,4 @@ RUN python3.6 -m ipykernel install --user
 RUN python3.6 -m pip install deco
 RUN python3.6 -m pip install memory_profiler
 RUN python3.6 -m pip install cached-property==1.5.1
+RUN python3.6 -m pip install psycopg2
